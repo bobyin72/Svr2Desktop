@@ -1,0 +1,28 @@
+# OS / editor / PowerShell output
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Svr2Desktop runtime output (never commit real run data)
+Svr2Desktop_result.json
+Svr2Desktop_verify_*/
+Svr2DesktopBackup/
+*_result.json
+*.log
+
+# Local-only tooling and archives (kept in the internal repo, not published)
+_history/
+_local_probe_macos/
+Review/
+*.bak
+*.retired
+*.verified
+
+# Python scratch files used by local probes
+__pycache__/
+*.pyc

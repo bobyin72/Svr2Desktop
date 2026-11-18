@@ -1,0 +1,20 @@
+{
+  "_readme": "Svr2Desktop v11.0 configuration. This file is OPTIONAL - delete it and the script falls back to its built-in defaults. Only the keys listed below are read; every other key is ignored on purpose, so a stray or tampered file cannot redirect backups, logs, temp paths or switch on dangerous behaviour.",
+  "_readme_downgrade": "The Downgrade stage (UAC prompts / Defender / password expiry / Security Center alerts) has NO configuration key here, by design. A security downgrade must be chosen explicitly - menu [10], -Stage Downgrade, or -Stage All - and never toggled on by a file sitting next to the script.",
+  "_readme_neverdisable": "NeverDisable is a hard guard list: any service named here can never be disabled by the Services stage, even if the script logic is changed later. Spooler and WlanSvc sit here because printing/PDF export and wireless are usually wanted.",
+  "BackupRoot": "",
+  "DisableNagle": true,
+  "DisableIPv6Tunnel": true,
+  "KeepFontSmoothing": true,
+  "CleanupEnabled": true,
+  "NeverDisable": [
+    "Spooler",
+    "WlanSvc",
+    "dot3svc",
+    "Dnscache",
+    "LanmanServer",
+    "LanmanWorkstation",
+    "RpcSs",
+    "EventLog"
+  ]
+}
